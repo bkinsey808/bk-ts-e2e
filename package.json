@@ -1,0 +1,18 @@
+{
+  "name": "bk-ts-e2e",
+  "version": "0.0.0",
+  "description": "a typescript example",
+  "author": "Ben Kinsey",
+  "scripts": {
+    "tsc": "tsc --p tsc-tsconfig.json",
+    "pretest": "npm run tsc",
+    "test": "protractor dist/protractor-conf.js"
+  },
+  "dependencies": {
+    "@types/jasmine": "^2.2.33",
+    "jasmine": "^2.4.1",
+    "protractor": "^4.0.4",
+    "tsc": "^1.20150623.0",
+    "typescript": "^2.0.0"
+  }
+}
