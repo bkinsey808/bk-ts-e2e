@@ -1,18 +1,16 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
     "moduleResolution": "node",
+    "module": "commonjs",
     "sourceMap": false,
     "declaration": false,
     "noImplicitAny": false,
     "outDir": "dist"
   },
   "include": [
-    "src/**/*.ts",
-    "node_modules/@types/jasmine"
-  ],
-  "files": [
-    "node_modules/@types/jasmine"    
-  ]
+    "src/*.ts",
+    "node_modules/@types/jasmine/index.d.ts",
+    "node_modules/@types/webpack/index.d.ts"
+  ] 
 }

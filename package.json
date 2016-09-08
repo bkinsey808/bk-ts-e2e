@@ -4,15 +4,21 @@
   "description": "a typescript example",
   "author": "Ben Kinsey",
   "scripts": {
-    "tsc": "tsc --p tsc-tsconfig.json",
-    "pretest": "npm run tsc",
-    "test": "protractor dist/protractor-conf.js"
+    "version": "ntsc --version",
+    "tsc": "ntsc",
+    "pretest": "npm run webpack",
+    "test": "protractor dist/protractor-conf.js",
+    "webpack": "webpack --config dist/webpack.config.js --display-error-details"
   },
   "dependencies": {
+    "@types/glob": "^5.0.29",
     "@types/jasmine": "^2.2.33",
+    "@types/webpack": "^1.12.33",
+    "glob": "^7.0.6",
     "jasmine": "^2.4.1",
+    "ntypescript": "^1.201609060105.1",
     "protractor": "^4.0.4",
-    "tsc": "^1.20150623.0",
-    "typescript": "^2.0.0"
+    "ts-loader": "^0.8.2",
+    "webpack": "^1.13.2"
   }
 }
